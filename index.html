@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ayyvbx</title>
+<style>
+  /* LUX 1: qora va oltin - klassik hashamat */
+  :root { --oltin: #d4af37; --oltin2: #f6e27a; --fon: #080808; --matn: #cfc7b4; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fon); color: var(--matn);
+    font-family: Georgia, "Times New Roman", serif; line-height: 1.8;
+    background-image: radial-gradient(ellipse at top, rgba(212,175,55,0.12), transparent 55%);
+  }
+  header { text-align: center; padding: 110px 20px 50px; animation: paydo 1.4s ease both; }
+  .kichik { letter-spacing: 8px; font-size: 0.75rem; color: var(--oltin); text-transform: uppercase; }
+  h1 {
+    margin: 14px 0; font-weight: 400; letter-spacing: 14px;
+    font-size: clamp(2.4rem, 9vw, 4.6rem);
+    background: linear-gradient(90deg, var(--oltin), var(--oltin2), var(--oltin));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .chiziq { width: 120px; height: 1px; margin: 22px auto; background: linear-gradient(90deg, transparent, var(--oltin), transparent); }
+  .shior { font-style: italic; color: #a69c84; }
+  main { max-width: 860px; margin: 0 auto; padding: 0 22px 40px; }
+  h2 { text-align: center; font-weight: 400; letter-spacing: 6px; font-size: 0.95rem; color: var(--oltin); text-transform: uppercase; margin: 50px 0 20px; }
+  .haqida { text-align: center; max-width: 600px; margin: 0 auto; }
+  .uchlik { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
+  .quti { border: 1px solid rgba(212,175,55,0.4); padding: 26px 20px; text-align: center; transition: .35s; }
+  .quti:hover { border-color: var(--oltin); box-shadow: 0 0 26px rgba(212,175,55,0.25); transform: translateY(-4px); }
+  .quti b { display: block; color: var(--oltin2); letter-spacing: 3px; font-weight: 400; margin-bottom: 6px; }
+  .quti span { font-size: 0.9rem; color: #9b937e; }
+  .aloqa { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; }
+  .aloqa a {
+    text-decoration: none; color: var(--fon); background: linear-gradient(90deg, var(--oltin), var(--oltin2));
+    padding: 12px 34px; letter-spacing: 3px; font-size: 0.85rem; text-transform: uppercase; transition: .3s;
+  }
+  .aloqa a:hover { box-shadow: 0 0 24px rgba(246,226,122,0.6); transform: translateY(-2px); }
+  footer { text-align: center; padding: 50px 20px; font-size: 0.75rem; letter-spacing: 3px; color: #5d5746; }
+  @keyframes paydo { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="kichik">Shaxsiy sahifa</div>
+  <h1>AYYVBX</h1>
+  <div class="chiziq"></div>
+  <div class="shior">Dizayn &middot; Texnologiya &middot; Ijod</div>
+</header>
+<main>
+  <h2>Men haqimda</h2>
+  <p class="haqida">Men texnologiya, zamonaviy dizayn va yangi g'oyalarni yaxshi ko'raman. Har kuni nimadir o'rganishga va qilgan ishimni sifatli, toza va chiroyli qilishga harakat qilaman.</p>
+
+  <h2>Yo'nalishlarim</h2>
+  <div class="uchlik">
+    <div class="quti"><b>DIZAYN</b><span>Zamonaviy va ixcham ko'rinishlar</span></div>
+    <div class="quti"><b>KOD</b><span>Veb-sahifalar va kichik loyihalar</span></div>
+    <div class="quti"><b>G'OYA</b><span>Yangi narsalarni sinab ko'rish</span></div>
+  </div>
+
+  <h2>Aloqa</h2>
+  <div class="aloqa">
+    <a href="https://instagram.com/ayyvbx" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://t.me/ayyvbx" target="_blank" rel="noopener">Telegram</a>
+  </div>
+</main>
+<footer>&copy; 2026 AYYVBX</footer>
+</body>
+</html>
