@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ayyvbx</title>
 <style>
-  /* LUX 1: qora va oltin - klassik hashamat */
+  /* Qora va oltin - klassik hashamat */
   :root { --oltin: #d4af37; --oltin2: #f6e27a; --fon: #080808; --matn: #cfc7b4; }
   * { box-sizing: border-box; }
   body {
@@ -25,7 +25,22 @@
   .shior { font-style: italic; color: #a69c84; }
   main { max-width: 860px; margin: 0 auto; padding: 0 22px 40px; }
   h2 { text-align: center; font-weight: 400; letter-spacing: 6px; font-size: 0.95rem; color: var(--oltin); text-transform: uppercase; margin: 50px 0 20px; }
-  .haqida { text-align: center; max-width: 600px; margin: 0 auto; }
+
+  /* Memento mori bo'limi */
+  .memento { text-align: center; padding: 10px 0 0; }
+  /* Rasm: faqat o'rtadagi chizma qismi ko'rinadi, kulrang fon qorong'i sahifaga moslashadi */
+  .rasm {
+    display: block; width: 100%; max-width: 560px; aspect-ratio: 2.4 / 1; object-fit: cover; object-position: 50% 50%;
+    margin: 0 auto 30px; filter: invert(1); mix-blend-mode: screen; opacity: 0.92;
+  }
+  .lotin {
+    font-size: clamp(1.8rem, 7vw, 3rem); letter-spacing: 10px; text-transform: uppercase;
+    background: linear-gradient(90deg, var(--oltin), var(--oltin2), var(--oltin));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .tarjima { margin-top: 6px; font-size: 1.25rem; font-style: italic; color: #e8dfc6; letter-spacing: 2px; }
+  .izoh { max-width: 520px; margin: 18px auto 0; font-size: 0.95rem; color: #8f876f; }
+
   .uchlik { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
   .quti { border: 1px solid rgba(212,175,55,0.4); padding: 26px 20px; text-align: center; transition: .35s; }
   .quti:hover { border-color: var(--oltin); box-shadow: 0 0 26px rgba(212,175,55,0.25); transform: translateY(-4px); }
@@ -49,18 +64,26 @@
   <div class="shior">Dizayn &middot; Texnologiya &middot; Ijod</div>
 </header>
 <main>
-  <h2>Men haqimda</h2>
-  <p class="haqida">Men texnologiya, zamonaviy dizayn va yangi g'oyalarni yaxshi ko'raman. Har kuni nimadir o'rganishga va qilgan ishimni sifatli, toza va chiroyli qilishga harakat qilaman.</p>
+  <h2>Shiorim</h2>
+  <div class="memento">
+    <!-- Rasm: rasm.png nomli fayl yuklansa ko'rinadi, bo'lmasa o'zi yashirinadi -->
+    <img class="rasm" src="rasm.png" alt="" onerror="this.style.display='none'">
+    <div class="lotin">Memento mori</div>
+    <div class="tarjima">O'limni esla</div>
+    <p class="izoh">Hayot cheklangan, shuning uchun har bir kunning qadriga yet.</p>
+  </div>
 
   <h2>Yo'nalishlarim</h2>
   <div class="uchlik">
     <div class="quti"><b>DIZAYN</b><span>Zamonaviy va ixcham ko'rinishlar</span></div>
-    <div class="quti"><b>KOD</b><span>Veb-sahifalar va kichik loyihalar</span></div>
+    <div class="quti"><b>BUSINESS</b><span>Loyihalar va biznes g'oyalar</span></div>
     <div class="quti"><b>G'OYA</b><span>Yangi narsalarni sinab ko'rish</span></div>
   </div>
 
   <h2>Aloqa</h2>
   <div class="aloqa">
+    <a href="tel:+998777778871">Telefon</a>
+    <a href="mailto:makhmdvx@gmail.com">Pochta</a>
     <a href="https://instagram.com/ayyvbx" target="_blank" rel="noopener">Instagram</a>
     <a href="https://t.me/ayyvbx" target="_blank" rel="noopener">Telegram</a>
   </div>
